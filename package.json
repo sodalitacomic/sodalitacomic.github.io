@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "popmotion": "^9.3.4"
+    "popmotion": "^9.3.4",
+    "react": "^17.0.2"
   }
 }
