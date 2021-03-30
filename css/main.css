@@ -48,6 +48,11 @@
     display: inline-block;    
 }
 
+#setaesq img{
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+}
+
 #episodios img, #som img, #info img, #setaesq img, #setadir img {
     padding: 16px 16px;
     height: 48px;  
