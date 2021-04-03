@@ -1,5 +1,6 @@
-    html, body{
+    body{
         background-color: #fee8b2;
+        overflow: hidden; /* Hide scrollbars */
     }
 
     #ui {
@@ -57,12 +58,6 @@
     padding: 16px 16px;
     height: 48px;  
     width: 48px;
-}
-
-#episodios img:hover, #som img:hover, #info img:hover, #setaesq img:hover, #setadir img:hover {
-    padding: 10px 20px 30px 20px;
-    height: 40px;  
-    width: 40px;
 }
 
 #som{
