@@ -10,9 +10,7 @@
         border: 1px #800080 solid;
     }
 
-    #hq {
-        /**border: 1px #800080 solid;**/
-        background-color:white;
+    #hqCanvas {
         margin: auto;
 	    width: 60%;
         height: 600px;
