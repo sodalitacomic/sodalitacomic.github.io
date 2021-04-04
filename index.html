@@ -10,12 +10,6 @@
 </head>
 
 <body onload="iniciar()">
-  <img id="f1" src="img/estatico/f1.png" style="display:none;" />
-  <img id="f2" src="img/estatico/f2.png" style="display:none;" />
-  <img id="f3" src="img/estatico/f3.png" style="display:none;" />
-  <img id="f4" src="img/estatico/f4.png" style="display:none;" />
-  <img id="f5" src="img/estatico/f5.png" style="display:none;" />
-  <img id="f6" src="img/estatico/f16.jpg" style="display:none;" />
 
   <div id="ui">
     <button id="som"><img src="img/som.svg"></button>
@@ -23,7 +17,15 @@
     <button id="info"><img src="img/info.svg"></button>
   </div>
   <div id="hq">
-    <canvas id="hqCanvas" style="border: 1px black solid"></canvas>
+    <div id="quadros">
+      <img id="f1" src="img/estatico/f1.png" />
+      <img id="f2" src="img/estatico/f2.png" style="display:none;" />
+      <img id="f3" src="img/estatico/f3.png" style="display:none;" />
+      <img id="f4" src="img/estatico/f4.png" style="display:none;" />
+      <img id="f5" src="img/estatico/f5.png" style="display:none;" />
+      <img id="f6" src="img/estatico/f6.png" style="display:none;" />
+    </div>
+    <!-- <canvas id="hqCanvas" width="900" height="600" style="border: 1px black solid"></canvas> -->
   </div>
   <div id="setas">
     <button id="setaesq" onclick="anterior()"><img src="img/seta.svg"></button>
