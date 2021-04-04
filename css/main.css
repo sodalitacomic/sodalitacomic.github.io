@@ -87,17 +87,30 @@
 }
 
 
+
+
 /* Movimento dos quadros da hq */
-#f1
+#f1, #f2
 {
-    animation-name: f1;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-play-state: paused;
+}
 
+#f1{
+    animation-name: f1;
+}
+
+#f2{
+    animation-name: f2;
 }
 
 @keyframes f1 {
+    from {width: 500px; height: 489px; margin-left:21%; margin-top:5%;}
+    to {width: 350px; height: 342px; margin-left:2%; margin-top:1%;}
+}
+
+@keyframes f2 {
     from {width: 500px; height: 489px; left:200px; top:50px;}
     to {width: 350px; height: 342px; left:30px; top:10px;}
 }

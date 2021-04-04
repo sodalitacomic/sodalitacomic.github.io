@@ -21,6 +21,8 @@ var y1 = 50;
 var larx1 = 500;
 var alt1 = 489;
 
+
+
 function pintar() {
     //contexto.clearRect(0, 0, 500, 600);
 
@@ -58,10 +60,12 @@ function iniciar() {
 function mainloop() {
     pintar();
 
-    if (mapaTecla[39] == true && pagina < 3) {
+    if (mapaTecla[39] == true && quadro < 3) {
         if (!pressDir) {
             pressDir = true; //impede que passe vários quadros ao pressionar a seta direita
             quadro++;
+            document.getElementById("f1").style.animationDirection = "normal";
+            document.getElementById("f1").style.animationPlayState = "running";
         }
     }
 
@@ -69,10 +73,12 @@ function mainloop() {
         pressDir = false; //permite passar outro quadro ao clicar na seta direita
     }
 
-    if (mapaTecla[37] == true && pagina > 0) {
+    if (mapaTecla[37] == true && quadro > 0) {
         if (!pressEsq) {
             pressEsq = true; //impede que passe vários quadros ao pressionar a seta esquerda
             quadro--;
+            document.getElementById("f1").style.animationDirection = "reverse"; //nao volta pra trás ainda
+            document.getElementById("f1").style.animationPlayState = "running";
         }
     }
 
@@ -82,24 +88,25 @@ function mainloop() {
 }
 
 function desenharHQ() {
-    if (quadro > 0) {
-        document.getElementById("f1").style.animationPlayState = "running";
 
-    }
 }
 
 function proximo() {
-    if (pagina < 3) {
+    if (quadro < 3) {
         if (!pressDir) {
             quadro++;
+            document.getElementById("f1").style.animationDirection = "normal";
+            document.getElementById("f1").style.animationPlayState = "running";
         }
     }
 }
 
 function anterior() {
-    if (pagina > 0) {
+    if (quadro > 0) {
         if (!pressEsq) {
             quadro--;
+            document.getElementById("f1").style.animationDirection = "reverse"; //nao volta pra trás ainda
+            document.getElementById("f1").style.animationPlayState = "running";
         }
     }
 }
