@@ -5,25 +5,23 @@
 
     #ui {
 	    width: 15%;
-        height: 650px;
+       
     	float: left;
-        /**border: 1px #800080 solid;**/
-        padding: 40px;
+        border: 1px #800080 solid;
     }
 
     #hq {
         /**border: 1px #800080 solid;**/
         background-color:white;
-	    width: 70%;
+        margin: auto;
+	    width: 60%;
         height: 600px;
-    	float: left;
     }
 
     #setas {
-        position: relative;
-        /**border: 1px #800080 solid;**/
-	    width: 70%;
-	    float: left;
+        border: 1px #800080 solid;
+	    margin: auto;
+        width: 60%;
     }
     
     button {
@@ -31,7 +29,7 @@
     transition-duration: 0.4s;
     height: 80px;
     padding: 0;
-    margin: 0;
+    margin: auto;
     
     width: 80px;
     border: none;
@@ -52,12 +50,13 @@
 #setaesq img{
     transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
 }
 
 #episodios img, #som img, #info img, #setaesq img, #setadir img {
-    padding: 16px 16px;
-    height: 48px;  
-    width: 48px;
+    max-width: 60%;
+    height: auto;
 }
 
 #som{
@@ -70,15 +69,9 @@
 
 #setaesq{
     border-radius: 20px 0 0 20px;
-    position:absolute;
-    top:50%;
-    left:46.5%;
 }
 
 #setadir{
     border-radius: 0 20px 20px 0;
-    position:absolute;
-    top:50%;
-    left:53.5%;
 }
 
