@@ -26,7 +26,7 @@ function pintar() {
 
     //contexto.font = "22pt Arial";
     //contexto.fillStyle = "black";
-    switch (pagina) { //trocar do prologo para outras paginas
+    switch (pagina) { //timeline - trocar do prologo para outras paginas
         case 0: desenharHQ();
             break;
             // case 1: contexto.fillText("Em breve1", 250, 250);
@@ -65,6 +65,10 @@ function mainloop() {
         }
     }
 
+    if (mapaTecla[39] == false) {
+        pressDir = false; //permite passar outro quadro ao clicar na seta direita
+    }
+
     if (mapaTecla[37] == true && pagina > 0) {
         if (!pressEsq) {
             pressEsq = true; //impede que passe vários quadros ao pressionar a seta esquerda
@@ -75,19 +79,27 @@ function mainloop() {
     if (mapaTecla[37] == false) {
         pressEsq = false; //permite passar outro quadro ao clicar na seta esquerda
     }
-
-    if (mapaTecla[39] == false) {
-        pressDir = false; //permite passar outro quadro ao clicar na seta direita
-    }
 }
 
 function desenharHQ() {
-    // contexto.drawImage(des1, x1, y1, lar1, alt1); //desenha primeiro quadro
-
     if (quadro > 0) {
-        document.getElementById('f1').style.animation = "spin1";
-        //////     contexto.drawImage(des1, 30, 10, 350, 342);
-        ////     contexto.drawImage(des2, 380, 15, 200, 217);
+        document.getElementById("f1").style.animationPlayState = "running";
 
+    }
+}
+
+function proximo() {
+    if (pagina < 3) {
+        if (!pressDir) {
+            quadro++;
+        }
+    }
+}
+
+function anterior() {
+    if (pagina > 0) {
+        if (!pressEsq) {
+            quadro--;
+        }
     }
 }

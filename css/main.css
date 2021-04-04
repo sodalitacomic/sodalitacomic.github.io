@@ -87,14 +87,13 @@
 }
 
 
-
-
 /* Movimento dos quadros da hq */
 #f1
 {
     animation-name: f1;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    animation-play-state: paused;
 
 }
 
