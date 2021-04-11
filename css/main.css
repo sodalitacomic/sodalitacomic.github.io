@@ -1,3 +1,41 @@
+    * {
+        /* border: 1px solid red; */
+        margin: 0;
+        padding: 0;
+    }
+
+    #hq {
+        float: left;
+        width: 80vw;
+        height: 100vh;
+    }
+
+    #sidebar {
+        float: right;
+        width: 20vw;
+        height: 100vh;
+        background-color: rgb(155, 155, 155);
+        padding: 2rem;
+    }
+
+    .chapter .chapter__img {
+        float: left;
+        width: 2rem;
+    }
+
+    .chapter .chapter__img img {
+        width: 100%;
+    }
+
+    .chapter .chapter__details {
+        float: right;
+        min-width: 4rem;
+    }
+
+    nav {
+        clear: both;
+    }
+
     body {
         background-color: #fee8b2;
         overflow: hidden;
