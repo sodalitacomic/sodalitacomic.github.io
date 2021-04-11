@@ -8,3 +8,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 [//]: <> (git push -u origin main)
 [//]: <> (git pull origin main)
+[//]: <> (pug -w ./ -o ./html -P)
