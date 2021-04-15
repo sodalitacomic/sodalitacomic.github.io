@@ -1,0 +1,11 @@
+mixin frame(frameAOS, chapterNumber, chapterPage, frameImage)
+  //- img(src="/img/chapters/" + chapterNumber + "/" + chapterPage + "/" + frameImage + ".gif")
+  img(data-aos=frameAOS src="/img/chapters/" + chapterNumber + "/" + chapterPage + "/" + frameImage + ".gif")
+
+//- span(style="display:block") Por Giovanna Camocardi e Juliana Sá
+//- span(style="display:block") Orientação de Marcelo Pereira
+
+each n in ["00", "01", "02", "03"]
+  +frame("fade-up", "ch00", "pg01", n)
+
+p(data-aos="fade-up") Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magnam quisquam illum in corporis fugit iure nobis repellendus inventore vero tempore, modi accusantium quam corrupti similique earum, repellat mollitia? Accusamus.

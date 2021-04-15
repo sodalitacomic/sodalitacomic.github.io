@@ -1,19 +1,18 @@
 mixin chapter(chapterNumber, chapterDetails)
   .chapter
     .chapter__img
-      img(src="../img/ch-thumbnail/" + chapterNumber + ".png")
+      img(src="../img/chapters/" + chapterNumber + "/thumbnail.png")
     .chapter__details
       .chapter__details__number= chapterDetails.number
       .chapter__details__title= chapterDetails.title
 
 #sidebar
-  h1 Sodalita
-  h2 A Jornada de Rui na Caverna de Cristal
+  img(src="../img/id/logo.svg")
   #chapters
     - const ch00 = { number: "Capítulo 00", title: "Prólogo" }
-    +chapter("00", ch00)
+    +chapter("ch00", ch00)
     - const ch01 = { number: "Capítulo 01", title: "Quando o queijo acaba" }
-    +chapter("01", ch01)
+    +chapter("ch01", ch01)
   nav
     a(href="#")
       img(src="../img/nav/prev.png")
