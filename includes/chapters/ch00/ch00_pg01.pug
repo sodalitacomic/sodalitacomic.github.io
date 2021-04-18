@@ -1,9 +1,0 @@
-mixin frame(chapterNumber, chapterPage, frameImage, frameAOS, frameClass)
-  //- img(src="/img/chapters/" + chapterNumber + "/" + chapterPage + "/" + frameImage + ".gif")
-  img(src="/img/chapters/" + chapterNumber + "/" + chapterPage + "/" + frameImage + ".gif" data-aos=frameAOS class=frameClass)
-
-//- span(style="display:block") Por Giovanna Camocardi e Juliana Sá
-//- span(style="display:block") Orientação de Marcelo Pereira
-
-each n in ["00", "01", "02", "03"]
-  +frame("ch00", "pg01", n, "none", "fr_" + n)

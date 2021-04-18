@@ -20,6 +20,8 @@ body {
     /* Firefox */
 }
 
+/* GRID */
+
 .grid {
     display: grid;
 }
@@ -32,17 +34,21 @@ body {
     grid-template-columns: 2rem 3rem;
 }
 
+/* HQ */
+
 #hq {
     overflow: auto;
     height: 100vh;
     box-sizing: border-box;
-    background: linear-gradient(#f4f4f4, #d7d7d7);
+    /* background: linear-gradient(#f4f4f4, #d7d7d7); */
     text-align: center;
 }
 
-#hq img {
-    width: 30%;
-}
+/* #hq img {
+    width: 100%;
+} */
+
+/* SIDEBAR */
 
 #sidebar {
     height: 100vh;
@@ -80,3 +86,51 @@ nav {
     position: absolute;
     bottom: 0;
 }
+
+/* CH 00 - PG 01 */
+#hq {
+    background-image: url('../img/storyboard.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center -70rem;
+}
+
+.fstFrame {
+    display: block;
+    background-color: #00115A;
+    margin: 0 auto;
+}
+
+.fr_00 {
+    height: 100vh;
+}
+
+.fr_01 {
+    width: 40%;
+    margin-left: -1rem;
+}
+
+.fr_02 {
+    width: 22%;
+    vertical-align: top;
+    margin-top: 1.1rem;
+    margin-right: 1.1rem;
+}
+
+.fr_03 {
+    width: 22%;
+    margin-bottom: 0.5rem;
+    margin-left: -1rem;
+}
+
+.fr_04 {
+    width: 84%;
+    margin-left: -.3rem;
+}
+
+.fr_05 {
+    /* width: 20%; */
+    margin-left: 10rem;
+}
+
+.fr_06 {}

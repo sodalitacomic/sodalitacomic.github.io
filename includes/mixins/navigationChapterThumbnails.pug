@@ -1,0 +1,7 @@
+mixin chapter(chapterNumber, chapterDetails)
+  .chapter
+    .chapter__img
+      img(src="../img/chapters/" + chapterNumber + "/thumbnail.png")
+    .chapter__details
+      .chapter__details__number= chapterDetails.number
+      .chapter__details__title= chapterDetails.title
