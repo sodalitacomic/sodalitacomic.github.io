@@ -1,4 +1,4 @@
-[![acessar webcomic](/img/header.png)](http://sodalita.github.io "acessar site da webcomic")
+[![acessar webcomic](/img/id/header.png)](http://sodalita.github.io "acessar site da webcomic")
 
 # Sodalita: A Jornada de Rui na Caverna de Cristal
 
