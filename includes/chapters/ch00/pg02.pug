@@ -1,4 +1,5 @@
-include ../../mixins/pageImages
+mixin frame(chapterNumber, chapterPage, frameImage, frameClassCommon, frameClass)
+  img(src="/img/chapters/" + chapterNumber + "/" + chapterPage + "/" + frameImage + ".png" class=frameClass class=frameClassCommon)
 
 //- span.stbd
 //-   img(src="/img/storyboard.png" class="storyboard")
