@@ -1,7 +1,7 @@
 include ../mixins/navigationChapterThumbnails
 
 #sidebar
-  img(src="../img/id/logo.svg")
+  img(src="../img/id/logo.svg" class="nav-logo")
   #chapters
     - const ch00 = { number: "Capítulo 00", title: "Prólogo" }
     +chapter("ch00", ch00)
@@ -15,4 +15,4 @@ include ../mixins/navigationChapterThumbnails
     a(href="#")
       img(src="../img/nav/top.png")
     a(href="#")
-      img(src="../img/nav/sound_on.png")
+      img(src="../img/nav/sound_on.png" onClick="playAudio()")

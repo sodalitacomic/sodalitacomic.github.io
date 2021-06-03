@@ -129,7 +129,7 @@ nav {
 }
 
 .fr_05 {
-  /* width: 20%; */
+  width: 20%;
   margin-left: 10rem;
 }
 
@@ -142,4 +142,25 @@ nav {
 
 .fade-in {
   opacity: 1;
+}
+
+/* save */
+.fr_01 {
+  margin-top: 3rem;
+  width: 60%;
+}
+
+.fr_02 {
+  margin-top: 3rem;
+  width: 90%;
+}
+
+.fr_03 {
+  width: 37%;
+  margin-right: 40rem;
+}
+
+.fr_04 {
+  width: 58%;
+  margin-left: 22rem;
 }
