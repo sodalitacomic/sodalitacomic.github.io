@@ -1,2 +1,3 @@
 mixin frame(chapterNumber, chapterPage, frameImage, frameClassCommon, frameClass)
-  img(src="/img/chapters/" + chapterNumber + "/" + chapterPage + "/" + frameImage + ".gif" class=frameClass + " " + frameClassCommon)
+  div(class=frameClass)
+    img(src="/img/chapters/" + chapterNumber + "/" + chapterPage + "/" + frameImage + ".gif" class=frameClassCommon style="width:100%;")

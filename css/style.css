@@ -35,7 +35,8 @@ body {
 }
 
 .grid-hq {
-    grid-template-columns: 10fr;
+    grid-template-columns: repeat(auto-fill, 5%);
+    row-gap: 3rem;
 }
 
 /* HQ */
@@ -123,24 +124,26 @@ nav {
 } */
 
 .fstFrame {
-    display: block;
-    /* background-color: #00115A; */
+    /* display: block; */
+    background-color: #00115A;
     /* margin: 0 auto; */
-    grid-column: 1;
+    /* grid-column: 1; */
 }
 
 .fr_00 {
     /* height: 100vh; */
-    grid-column: 1;
+    grid-column: 1 / 25;
+    z-index: 1;
 }
 
-/* frame start */
+/* frame space */
 
-/* .fr_01 {
-    grid-column: 1 / 3;
-} */
+.space {
+    grid-column: 1 / 25;
+    height: 4rem;
+}
 
-/* frame end */
+/* frame animation */
 
 .frame {
     opacity: 0;

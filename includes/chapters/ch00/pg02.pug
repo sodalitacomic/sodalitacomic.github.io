@@ -1,17 +1,12 @@
-mixin frame(chapterNumber, chapterPage, frameImage, frameClassCommon, frameClass)
-  img(src="/img/chapters/" + chapterNumber + "/" + chapterPage + "/" + frameImage + ".png" class=frameClass class=frameClassCommon)
-
-//- span.stbd
-//-   img(src="/img/storyboard.png" class="storyboard")
-
-span.fstFrame
-  img(src="/img/chapters/ch00/pg01/00.gif" class="fr_00")
+include ../../mixins/pageImages
 
 - var n = 1
-while n <= 13
+while n <= 6
   - var f = n++
 
   if f < 10 
-    +frame("ch00", "pg01", "0" + f, "frame", "fr_0" + f)
+    +frame("ch00", "pg02", "0" + f, "frame", "fr_0" + f)
   else if f >= 10
-    +frame("ch00", "pg01", f, "frame", "fr_" + f)
+    +frame("ch00", "pg02", f, "frame", "fr_" + f)
+
+div.space

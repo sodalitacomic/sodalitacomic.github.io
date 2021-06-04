@@ -1,0 +1,20 @@
+#hq {
+  padding: 4rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+h2.collab {
+  margin: 2rem 0;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h4 {
+  margin-top: 2rem;
+  text-transform: lowercase;
+}

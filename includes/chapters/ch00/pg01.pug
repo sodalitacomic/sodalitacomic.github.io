@@ -3,14 +3,16 @@ include ../../mixins/pageImages
 //- span.stbd
 //-   img(src="/img/storyboard.png" class="storyboard")
 
-span.fstFrame
-  img(src="/img/chapters/ch00/pg01/00.gif" class="fr_00")
+div.fstFrame.fr_00
+  img(src="/img/chapters/ch00/pg01/00.gif" style="height: 100vh;")
 
 - var n = 1
-while n <= 13
+while n <= 8
   - var f = n++
 
   if f < 10 
     +frame("ch00", "pg01", "0" + f, "frame", "fr_0" + f)
   else if f >= 10
     +frame("ch00", "pg01", f, "frame", "fr_" + f)
+
+div.space
