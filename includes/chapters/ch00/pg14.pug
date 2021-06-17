@@ -1,0 +1,12 @@
+include ../../mixins/pageImages
+
+- var n = 1
+while n <= 6
+  - var f = n++
+
+  if f < 6 
+    +frame("ch00", "pg14", "0" + f, "frame", "fr_0" + f)
+  else if f >= 6
+    +frame("ch00", "pg14", f, "frame", "fr_" + f)
+
+div.space
