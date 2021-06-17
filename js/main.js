@@ -23,3 +23,12 @@ $(document).ready(function () {
       .addTo(controller)
   })
 });
+
+var pageURL = window.location.href.toString();
+pageURL.substring(pageURL.lastIndexOf("/") + 1).substring(0, pageURL.lastIndexOf("."));
+
+pageURL = /:(.+)/.exec(pageURL)[1];
+
+pageURL.substring(0, pageURL.lastIndexOf("/") + 1);
+
+pageURL.substring(pageURL.lastIndexOf("/"));

@@ -1,0 +1,35 @@
+.pg_05 {
+  background-color: #B4EEFF;
+}
+
+.pg_06 {
+  background-color: #C5EDFF;
+}
+
+.pg_07 {
+  background-color: #FED8A4;
+}
+
+.pg_12 {
+  background-color: #AAC0F6;
+}
+
+.pg_purple {
+  background-color: #BC77FB;
+}
+
+.pg_red {
+  background-color: #FED9D5;
+}
+
+.pg_grey {
+  background-color: #BEBEBE;
+}
+
+.pg_random {
+  grid-column: 1 / 21;
+}
+
+.pg_random img {
+  width: 80%;
+}

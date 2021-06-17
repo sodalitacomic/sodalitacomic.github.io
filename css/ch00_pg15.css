@@ -1,0 +1,24 @@
+#hq {
+  padding-top: 4rem;
+}
+
+.fr_01 {
+  grid-column: 3 / 19;
+  grid-row: 1;
+}
+
+.fr_02 {
+  grid-column: 3 / 11;
+  grid-row: 2;
+}
+
+.fr_03 {
+  grid-column: 12 / 19;
+  grid-row: 2/4;
+  padding-top: 5rem;
+}
+
+.fr_04 {
+  grid-column: 1 / 21;
+  grid-row: 3;
+}

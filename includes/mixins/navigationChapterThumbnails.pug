@@ -1,7 +1,11 @@
-mixin chapter(chapterNumber, chapterDetails)
+include ../mixins/pagesNavigation
+
+mixin chapter(chapterNumber, chapterDetails, chapterTotalPages)
   .chapter
     .chapter__img
       img(src="../img/chapters/" + chapterNumber + "/thumbnail.png")
     .chapter__details
       .chapter__details__number= chapterDetails.number
       .chapter__details__title= chapterDetails.title
+
+      +chapterPages(chapterTotalPages, chapterNumber)

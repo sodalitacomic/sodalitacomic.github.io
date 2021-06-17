@@ -4,15 +4,16 @@ include ../mixins/navigationChapterThumbnails
   img(src="../img/id/logo.svg" class="nav-logo")
   #chapters
     - const ch00 = { number: "Capítulo 00", title: "Prólogo" }
-    +chapter("ch00", ch00)
-    - const ch01 = { number: "Capítulo 01", title: "Quando o queijo acaba" }
-    +chapter("ch01", ch01)
+    +chapter("ch00", ch00, 16)
+
+    - const ch01 = { number: "Capítulo 01", title: "Em breve..." }
+    +chapter("ch01", ch01, 1)
   nav
     a(href="#")
       img(src="../img/nav/prev.png")
     a(href="#")
       img(src="../img/nav/next.png")
     a(href="#")
-      img(src="../img/nav/top.png" onClick="goTop()")
+      img(src="../img/nav/top.png")
     a(href="#")
       img(src="../img/nav/sound_on.png" onClick="playAudio()")
