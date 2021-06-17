@@ -1,8 +1,8 @@
-$(document).ready(function(){
+$(document).ready(function () {
   // init ScrollMagic
   var controller = new ScrollMagic.Controller();
 
-  $(".frame").each(function(){
+  $(".frame").each(function () {
     // console.log(this);
 
     // build scene
@@ -12,14 +12,14 @@ $(document).ready(function(){
       // triggerHook: 0, // where on page the trigger is
       // reverse: false // animation only runs 1 time
     })
-    .setClassToggle(this, "fade-in") // add class "show" to element "this"
-    // .addIndicators({ // indicators to show where the element is and when it's triggered
-    //   name: "first scene",
-    //   colorTrigger: "red",
-    //   indent: 200,
-    //   colorStart: "cian",
-    //   colorEnd: "pink"
-    // })
-    .addTo(controller)
+      .setClassToggle(this, "fade-in") // add class "show" to element "this"
+      // .addIndicators({ // indicators to show where the element is and when it's triggered
+      //   name: "first scene",
+      //   colorTrigger: "red",
+      //   indent: 200,
+      //   colorStart: "cian",
+      //   colorEnd: "pink"
+      // })
+      .addTo(controller)
   })
 });
