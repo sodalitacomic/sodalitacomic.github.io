@@ -8,12 +8,9 @@ include ../mixins/navigationChapterThumbnails
 
     - const ch01 = { number: "Capítulo 01", title: "Em breve..." }
     +chapter("ch01", ch01, 1)
-  nav
-    a(href="#")
-      img(src="../img/nav/prev.png")
-    a(href="#")
-      img(src="../img/nav/next.png")
-    a(href="#")
-      img(src="../img/nav/top.png")
-    a(href="#")
-      img(src="../img/nav/sound_on.png" onClick="playAudio()")
+  nav.mainNavigation
+    img(src="../img/nav/prev.png" onClick="prevPage()")
+    img(src="../img/nav/next.png" onClick="nextPage()")
+    img(src="../img/nav/top.png")
+    img(src="../img/nav/sound_on.png" onClick="playAudio()")
+    

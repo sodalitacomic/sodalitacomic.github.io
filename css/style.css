@@ -149,6 +149,11 @@ nav {
     bottom: 0;
 }
 
+/* .mainNavigation {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 5%);
+} */
+
 .nav-logo {
     margin-bottom: 2rem;
 }
