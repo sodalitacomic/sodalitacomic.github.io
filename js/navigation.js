@@ -1,13 +1,13 @@
+// get site url
+var pageURL = window.location.href.toString();
+// main website url without page html
+var page = pageURL.substring(0, pageURL.lastIndexOf("/") + 1);
+// page number without html extension
+var pageURLNum = pageURL.substring(pageURL.length - 7, pageURL.length - 5);
+// page number as integer
+var pageNum = parseInt(pageURLNum, 10);
+  
 function prevPage() {
-  // get site url
-  var pageURL = window.location.href.toString();
-  // main website url without page html
-  var page = pageURL.substring(0, pageURL.lastIndexOf("/") + 1);
-  // page number without html extension
-  var pageURLNum = pageURL.substring(pageURL.length - 7, pageURL.length - 5);
-  // page number as integer
-  var pageNum = parseInt(pageURLNum, 10);
-
   var prevPage = pageNum - 1;
 
   if (prevPage < 10) {
@@ -29,15 +29,6 @@ function prevPage() {
 }
 
 function nextPage() {
-  // get site url
-  var pageURL = window.location.href.toString();
-  // main website url without page html
-  var page = pageURL.substring(0, pageURL.lastIndexOf("/") + 1);
-  // page number without html extension
-  var pageURLNum = pageURL.substring(pageURL.length - 7, pageURL.length - 5);
-  // page number as integer
-  var pageNum = parseInt(pageURLNum, 10);
-
   var nextPage = pageNum + 1;
 
   if (nextPage < 10) {
@@ -56,10 +47,5 @@ function nextPage() {
 }
 
 function teamPage() {
-  // get site url
-  var pageURL = window.location.href.toString();
-  // main website url without page html
-  var page = pageURL.substring(0, pageURL.lastIndexOf("/") + 1);
-
   window.location.href = page + "team.html";
 }
