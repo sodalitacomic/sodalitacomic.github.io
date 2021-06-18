@@ -19,15 +19,48 @@
 }
 
 .pg_red {
+  color: #FC1202;
   background-color: #FED9D5;
 }
 
 .pg_grey {
+  color: #5F5F5F;
   background-color: #BEBEBE;
 }
 
 .pg_random {
   grid-column: 1 / 21;
+}
+
+.pg_text {
+  grid-column: 1 / 21;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 5%);
+  grid-auto-rows: min-content;
+  text-align: left;
+  padding-top: 10rem;
+}
+
+.pg_text h1,
+.pg_text h2,
+.pg_text p {
+  grid-column: 5 / 17;
+  margin-bottom: 1rem;
+}
+
+.pg_text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.pg_text h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.pg_text p {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .pg_random img {

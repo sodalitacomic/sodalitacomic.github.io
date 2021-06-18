@@ -62,6 +62,29 @@ body {
     box-sizing: border-box;
     color: #fff;
     background-color: #283886;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+}
+
+/* NAVIGATION */
+
+nav {
+    text-align: center;
+}
+
+.mainNavigation {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20%);
+}
+
+.mainNavigation img {
+    place-self: center;
 }
 
 /* CHAPTER W THUMBNAIL */
@@ -70,7 +93,8 @@ body {
     padding: 0 1rem;
 }
 
-.chapter:hover .pages {
+.chapter:hover .pages,
+.chapter:hover .pages_blank {
     display: block;
 }
 
@@ -108,12 +132,23 @@ body {
 
 /* PAGES */
 
+.pages_blank {
+    font-size: .8rem;
+    letter-spacing: .02rem;
+    color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .15);
+    padding: 1rem;
+    border-radius: .4rem;
+    margin-top: .6rem;
+    display: none;
+}
+
 .pages {
     background-color: rgba(255, 255, 255, .15);
     padding: 1rem;
     border-radius: .4rem;
     margin-top: .6rem;
-    /* display: none; */
+    display: none;
 }
 
 .pages__title {
@@ -133,29 +168,12 @@ body {
 .pages__nav img {
     width: 100%;
     background-color: rgba(255, 255, 255, .15);
-    /* border: .3rem solid rgba(255, 255, 255, .3); */
     border-radius: .6rem;
     transition: all 500ms;
 }
 
 .pages__nav img:not(:hover) {
     opacity: .6;
-}
-
-/* NAVIGATION */
-
-nav {
-    position: absolute;
-    bottom: 0;
-}
-
-/* .mainNavigation {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 5%);
-} */
-
-.nav-logo {
-    margin-bottom: 2rem;
 }
 
 /* CH 00 - PG 01 */

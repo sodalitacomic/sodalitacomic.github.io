@@ -1,26 +1,25 @@
 mixin chapterPages(totalPages, pagesChapter)
-  .pages
-    .pages__title Páginas
-    .pages__nav
-      - var n = 1;
+  if totalPages == 0
+    .pages_blank
+      p Capítulo em desenvolvimento.
+      p Aguarde a próxima atualização.
+      p ;)
+  else if totalPages > 0
+    .pages
+      .pages__title Páginas
+      .pages__nav
+        - var n = 1;
 
-      while n <= totalPages
+        while n <= totalPages
 
-        - var p = n++
+          - var p = n++
 
-        if p < 10
-          img(src="../img/chapters/" + pagesChapter + "/pg0" + p +"/thumbnail.png")
-        else if p >= 10
-          img(src="../img/chapters/" + pagesChapter + "/pg" + p +"/thumbnail.png")
-          
-      //- img(src="../img/chapters/" + pagesChapter + "/pg" + p +"/thumbnail.png")
-
-      //- - var n = 0;
-      //- ul
-      //-   while n <= totalPages
-      //-     - var p = n++
-
-      //-     if p < 10 
-      //-       li= "0" + p
-      //-     else if p >= 10
-      //-       li= p
+          if p == 1
+            a(href="/html/index.html")
+              img(src="../img/chapters/" + pagesChapter + "/pg0" + p +"/thumbnail.png")
+          else if p < 10
+            a(href="/html/pg0" + p + ".html")
+              img(src="../img/chapters/" + pagesChapter + "/pg0" + p +"/thumbnail.png")
+          else if p >= 10
+            a(href="/html/pg" + p + ".html")
+              img(src="../img/chapters/" + pagesChapter + "/pg" + p +"/thumbnail.png")
