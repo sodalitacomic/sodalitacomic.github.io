@@ -1,4 +1,4 @@
-var blue = new Audio("/audio/soundtrack/blue.mp3");
+var blue = new Audio("/audio/soundtrack/blue.wav");
 var cyan_01 = new Audio("/audio/soundtrack/cyan_01.wav");
 var cyan_02 = new Audio("/audio/soundtrack/cyan_02.wav");
 var green = new Audio("/audio/soundtrack/green.wav");
