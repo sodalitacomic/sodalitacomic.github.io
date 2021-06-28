@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: #fee8b2;
+    /* background-color: #fee8b2; */
     font-family: 'Open Sans', sans-serif;
 
     /* Hide scrollbar for IE, Edge and Firefox */
@@ -46,8 +46,44 @@ body {
     overflow: auto;
     height: 100vh;
     box-sizing: border-box;
-    background: linear-gradient(#f4f4f4, #d7d7d7);
+    /* background: linear-gradient(#f4f4f4, #d7d7d7); */
     text-align: center;
+}
+
+.pg_yellow {
+    background: linear-gradient(rgba(255, 242, 211, 0.6), rgba(177, 140, 55, 0.6));
+}
+
+.pg_green {
+    background: linear-gradient(rgba(229, 255, 207, 0.6), rgba(93, 146, 53, 0.6));
+}
+
+.pg_cyan {
+    background: linear-gradient(rgba(217, 247, 247, 0.6), rgba(42, 161, 162, 0.6));
+}
+
+.pg_orange {
+    background: linear-gradient(rgba(248, 212, 190, 0.6), rgba(199, 82, 15, 0.6));
+}
+
+.pg_red {
+    background: linear-gradient(rgba(251, 235, 234, 1), rgba(177, 92, 89, 1));
+}
+
+.pg_grey {
+    background: linear-gradient(rgba(222, 222, 222, 0.6), rgba(112, 112, 112, 0.6));
+}
+
+.pg_blue {
+    background: linear-gradient(rgba(220, 223, 244, 0.6), rgba(9, 34, 200, 0.6));
+}
+
+.pg_pink {
+    background: linear-gradient(rgba(255, 207, 239, 0.6), rgba(164, 80, 124, 0.6));
+}
+
+.pg_purple {
+    background: linear-gradient(rgba(236, 217, 255, 0.6), rgba(77, 39, 116, 0.6));
 }
 
 /* #hq img {
@@ -76,6 +112,10 @@ body {
 
 nav {
     text-align: center;
+}
+
+.nav-logo {
+    width: 100%;
 }
 
 .mainNavigation {
@@ -216,7 +256,13 @@ nav {
 .frame {
     opacity: 0;
     transition: 1s;
-    display: block;
+    /* display: block; */
+}
+
+.frame {
+    opacity: 0;
+    transition: 1s;
+    /* display: block; */
 }
 
 .fade-in {

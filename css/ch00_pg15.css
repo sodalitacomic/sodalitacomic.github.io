@@ -4,21 +4,21 @@
 
 .fr_01 {
   grid-column: 3 / 19;
-  grid-row: 1;
+  grid-row: 2;
 }
 
 .fr_02 {
   grid-column: 3 / 11;
-  grid-row: 2;
+  grid-row: 3;
 }
 
 .fr_03 {
   grid-column: 12 / 19;
-  grid-row: 2/4;
+  grid-row: 3/5;
   padding-top: 5rem;
 }
 
 .fr_04 {
   grid-column: 1 / 21;
-  grid-row: 3;
+  grid-row: 4;
 }

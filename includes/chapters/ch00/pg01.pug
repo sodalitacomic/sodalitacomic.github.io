@@ -9,10 +9,16 @@ div.fstFrame.fr_00
 - var n = 1
 while n <= 8
   - var f = n++
+  - var ff = "0" + f
 
   if f < 10 
-    +frame("ch00", "pg01", "0" + f, "frame", "fr_0" + f)
+    +frame("ch00", "pg01", ff, "frame", "frame_" + ff, "fr_" + ff)
   else if f >= 10
-    +frame("ch00", "pg01", f, "frame", "fr_" + f)
+    +frame("ch00", "pg01", f, "frame", "frame_" + f, "fr_" + f)
+
+  //- if f < 10 
+  //-   +frame("ch00", "pg01", ff, "frame", "fr_0" + f)
+  //- else if f >= 10
+  //-   +frame("ch00", "pg01", f, "frame", "fr_" + f)
 
 div.space

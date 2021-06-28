@@ -35,6 +35,8 @@ if (pageURLNum == "ex" || pageURLNum == "02") {
   soundtrack = colorSoundtrack[9]
 }
 
+var btn = document.getElementsByClassName("btnAudio");
+
 var isPlaying = false;
 
 function playAudio() {
@@ -43,8 +45,17 @@ function playAudio() {
 
 soundtrack.onplaying = function() {
   isPlaying = true;
+  btn[0].src = "../img/nav/sound_on.svg";
 };
 
 soundtrack.onpause = function() {
   isPlaying = false;
+  btn[0].src = "../img/nav/sound_off.svg";
 };
+
+
+window.onload = function() {
+    soundtrack.play();
+}
+
+// document.getElementById(myAudio).src = "/audio/soundtrack/blue.wav";
